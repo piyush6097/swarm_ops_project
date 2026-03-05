@@ -1,0 +1,6 @@
+# SwarmOps - Multi-Agent E-Commerce Operations Intelligence
+# 
+# This project uses only Python standard library modules.
+# No external dependencies required!
+#
+# Python 3.8+ is recommended.
