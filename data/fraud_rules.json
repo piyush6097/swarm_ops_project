@@ -1,0 +1,28 @@
+{
+    "high_risk_pincodes": [
+        "110001",
+        "400001",
+        "560001"
+    ],
+    "blacklisted_ips": [
+        "192.168.1.105",
+        "10.0.0.55"
+    ],
+    "rules": {
+        "velocity_check": {
+            "threshold_mins": 5,
+            "score": 40
+        },
+        "address_mismatch": {
+            "score": 25
+        },
+        "new_account_high_value": {
+            "threshold_inr": 5000,
+            "score": 30
+        },
+        "cod_return_rate": {
+            "threshold_percent": 60,
+            "score": 35
+        }
+    }
+}

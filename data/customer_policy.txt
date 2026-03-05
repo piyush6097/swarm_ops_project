@@ -1,0 +1,5 @@
+POLICY DOCUMENT:
+1. Returns: Accepted within 7 days. Refund processed in 24 hours.
+2. Escalations: Any fraud complaint or legal threat must be escalated to human agent immediately.
+3. Compensation: Delivery delay > 2 days eligible for ₹100 wallet credit.
+4. Refunds: Auto-approve if < ₹500. Manual review if > ₹500.

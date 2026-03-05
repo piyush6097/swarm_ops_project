@@ -1,0 +1,5 @@
+SKU,our_price,flipkart_price,amazon_price,meesho_price,min_margin_percent
+SKU-4521,999,850,999,800,20
+SKU-1122,75000,74000,75500,74500,15
+SKU-9988,29000,28500,29000,28000,18
+SKU-3344,18000,17500,18000,17000,25

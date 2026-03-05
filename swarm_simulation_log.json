@@ -1,0 +1,321 @@
+[
+  {
+    "input": "SKU-4521 stock in Delhi warehouse dropped to 15 units",
+    "classification": [
+      "InventoryAgent"
+    ],
+    "agent_responses": [
+      {
+        "agent": "InventoryAgent",
+        "role": "Optimization",
+        "action": "CRITICAL_REORDER",
+        "details": {
+          "sku": "SKU-4521",
+          "warehouse": "Delhi",
+          "current_level": 15,
+          "reorder_recommended": "Yes",
+          "cost_impact_inr": 4500,
+          "status": "Critical"
+        },
+        "timestamp": "2026-03-04T22:11:01.778480"
+      }
+    ],
+    "final_outcome": {
+      "status": "Executed",
+      "notes": [],
+      "actions": [
+        {
+          "agent": "InventoryAgent",
+          "role": "Optimization",
+          "action": "CRITICAL_REORDER",
+          "details": {
+            "sku": "SKU-4521",
+            "warehouse": "Delhi",
+            "current_level": 15,
+            "reorder_recommended": "Yes",
+            "cost_impact_inr": 4500,
+            "status": "Critical"
+          },
+          "timestamp": "2026-03-04T22:11:01.778480"
+        }
+      ]
+    },
+    "kpi_snapshot": {
+      "inventory_saved": 4500,
+      "revenue_protected": 0,
+      "fraud_blocked": 0,
+      "queries_resolved": 0
+    }
+  },
+  {
+    "input": "Flipkart dropped price on iPhone 15 case by 12%",
+    "classification": [
+      "PricingAgent",
+      "FraudAgent"
+    ],
+    "agent_responses": [
+      {
+        "agent": "PricingAgent",
+        "role": "Dynamic Pricing",
+        "action": "PRICE_MATCH",
+        "details": {
+          "sku": "SKU-4521",
+          "current_price": 999.0,
+          "competitor_price": 879.12,
+          "recommended_price": 879.12,
+          "change_percent": 12.0,
+          "confidence": "High"
+        },
+        "timestamp": "2026-03-04T22:11:02.278614"
+      },
+      {
+        "agent": "FraudAgent",
+        "role": "Security",
+        "action": "Approve",
+        "details": {
+          "fraud_score": 0,
+          "risk_level": "Low",
+          "reasons": [],
+          "action_taken": "Approve"
+        },
+        "timestamp": "2026-03-04T22:11:02.278624"
+      }
+    ],
+    "final_outcome": {
+      "status": "Executed",
+      "notes": [],
+      "actions": [
+        {
+          "agent": "PricingAgent",
+          "role": "Dynamic Pricing",
+          "action": "PRICE_MATCH",
+          "details": {
+            "sku": "SKU-4521",
+            "current_price": 999.0,
+            "competitor_price": 879.12,
+            "recommended_price": 879.12,
+            "change_percent": 12.0,
+            "confidence": "High"
+          },
+          "timestamp": "2026-03-04T22:11:02.278614"
+        },
+        {
+          "agent": "FraudAgent",
+          "role": "Security",
+          "action": "Approve",
+          "details": {
+            "fraud_score": 0,
+            "risk_level": "Low",
+            "reasons": [],
+            "action_taken": "Approve"
+          },
+          "timestamp": "2026-03-04T22:11:02.278624"
+        }
+      ]
+    },
+    "kpi_snapshot": {
+      "inventory_saved": 4500,
+      "revenue_protected": 0,
+      "fraud_blocked": 0,
+      "queries_resolved": 0
+    }
+  },
+  {
+    "input": "Customer order #IND8821 not delivered in 7 days, threatening consumer forum complaint",
+    "classification": [
+      "CustomerAgent"
+    ],
+    "agent_responses": [
+      {
+        "agent": "CustomerAgent",
+        "role": "Service",
+        "action": "ESCALATE_TO_HUMAN",
+        "details": {
+          "ticket_id": "IND8821",
+          "sentiment": "Angry",
+          "escalation_reason": "Legal Threat Detected",
+          "policy_ref": "Section 2: Legal Threats",
+          "resolution_time": "Immediate"
+        },
+        "timestamp": "2026-03-04T22:11:02.778745"
+      }
+    ],
+    "final_outcome": {
+      "status": "Executed",
+      "notes": [],
+      "actions": [
+        {
+          "agent": "CustomerAgent",
+          "role": "Service",
+          "action": "ESCALATE_TO_HUMAN",
+          "details": {
+            "ticket_id": "IND8821",
+            "sentiment": "Angry",
+            "escalation_reason": "Legal Threat Detected",
+            "policy_ref": "Section 2: Legal Threats",
+            "resolution_time": "Immediate"
+          },
+          "timestamp": "2026-03-04T22:11:02.778745"
+        }
+      ]
+    },
+    "kpi_snapshot": {
+      "inventory_saved": 4500,
+      "revenue_protected": 0,
+      "fraud_blocked": 0,
+      "queries_resolved": 1
+    }
+  },
+  {
+    "input": "New account, \u20b98500 order, COD, 3 different addresses in last 10 mins from same IP",
+    "classification": [
+      "FraudAgent"
+    ],
+    "agent_responses": [
+      {
+        "agent": "FraudAgent",
+        "role": "Security",
+        "action": "Manual Review",
+        "details": {
+          "fraud_score": 65,
+          "risk_level": "High",
+          "reasons": [
+            "New Account High Value",
+            "Address Mismatch/Velocity"
+          ],
+          "action_taken": "Manual Review"
+        },
+        "timestamp": "2026-03-04T22:11:03.278908"
+      }
+    ],
+    "final_outcome": {
+      "status": "Executed",
+      "notes": [],
+      "actions": [
+        {
+          "agent": "FraudAgent",
+          "role": "Security",
+          "action": "Manual Review",
+          "details": {
+            "fraud_score": 65,
+            "risk_level": "High",
+            "reasons": [
+              "New Account High Value",
+              "Address Mismatch/Velocity"
+            ],
+            "action_taken": "Manual Review"
+          },
+          "timestamp": "2026-03-04T22:11:03.278908"
+        }
+      ]
+    },
+    "kpi_snapshot": {
+      "inventory_saved": 4500,
+      "revenue_protected": 0,
+      "fraud_blocked": 0,
+      "queries_resolved": 1
+    }
+  },
+  {
+    "input": "Flash sale starts in 1 hour, stock critically low on top 3 SKUs, 2 fraud alerts pending",
+    "classification": [
+      "InventoryAgent",
+      "PricingAgent",
+      "FraudAgent"
+    ],
+    "agent_responses": [
+      {
+        "agent": "InventoryAgent",
+        "role": "Optimization",
+        "action": "CRITICAL_REORDER",
+        "details": {
+          "sku": "SKU-4521",
+          "warehouse": "Delhi",
+          "current_level": 15,
+          "reorder_recommended": "Yes",
+          "cost_impact_inr": 4500,
+          "status": "Critical"
+        },
+        "timestamp": "2026-03-04T22:11:03.779054"
+      },
+      {
+        "agent": "PricingAgent",
+        "role": "Dynamic Pricing",
+        "action": "PRICE_MATCH",
+        "details": {
+          "sku": "SKU-4521",
+          "current_price": 999.0,
+          "competitor_price": 850.0,
+          "recommended_price": 850.0,
+          "change_percent": 14.9,
+          "confidence": "High"
+        },
+        "timestamp": "2026-03-04T22:11:03.779083"
+      },
+      {
+        "agent": "FraudAgent",
+        "role": "Security",
+        "action": "Approve",
+        "details": {
+          "fraud_score": 0,
+          "risk_level": "Low",
+          "reasons": [],
+          "action_taken": "Approve"
+        },
+        "timestamp": "2026-03-04T22:11:03.779090"
+      }
+    ],
+    "final_outcome": {
+      "status": "Executed",
+      "notes": [],
+      "actions": [
+        {
+          "agent": "InventoryAgent",
+          "role": "Optimization",
+          "action": "CRITICAL_REORDER",
+          "details": {
+            "sku": "SKU-4521",
+            "warehouse": "Delhi",
+            "current_level": 15,
+            "reorder_recommended": "Yes",
+            "cost_impact_inr": 4500,
+            "status": "Critical"
+          },
+          "timestamp": "2026-03-04T22:11:03.779054"
+        },
+        {
+          "agent": "PricingAgent",
+          "role": "Dynamic Pricing",
+          "action": "PRICE_MATCH",
+          "details": {
+            "sku": "SKU-4521",
+            "current_price": 999.0,
+            "competitor_price": 850.0,
+            "recommended_price": 850.0,
+            "change_percent": 14.9,
+            "confidence": "High"
+          },
+          "timestamp": "2026-03-04T22:11:03.779083"
+        },
+        {
+          "agent": "FraudAgent",
+          "role": "Security",
+          "action": "Approve",
+          "details": {
+            "fraud_score": 0,
+            "risk_level": "Low",
+            "reasons": [],
+            "action_taken": "Approve"
+          },
+          "timestamp": "2026-03-04T22:11:03.779090"
+        }
+      ]
+    },
+    "kpi_snapshot": {
+      "inventory_saved": 9000,
+      "revenue_protected": 0,
+      "fraud_blocked": 0,
+      "queries_resolved": 1
+    }
+  }
+]

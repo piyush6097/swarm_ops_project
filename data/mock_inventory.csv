@@ -1,0 +1,5 @@
+SKU,product_name,stock_mumbai,stock_delhi,stock_bangalore,reorder_point,unit_cost_inr
+SKU-4521,iPhone 15 Case,100,15,200,50,450
+SKU-1122,Samsung Galaxy S24,10,5,8,20,65000
+SKU-9988,Sony WH-1000XM5,50,50,50,30,22000
+SKU-3344,Nike Air Jordan,5,2,1,10,12000
